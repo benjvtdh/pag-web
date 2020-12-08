@@ -23,9 +23,18 @@ $(document).ready(function() {
         $('.item-submenu[menu=' + positionMenu + '] .submenu').css({ 'left': '0px' });
         $('.item-submenu[menu=' + positionMenu + '] .submenu .sube').css({ 'left': '-320px' });
 
+
+
         $('.item-submenu .sube > a').click(function() {
             var positionSubMenu = $(this).parent().attr('submenu');
-            $('.item-submenu[menu=' + positionMenu + '] .submenu .sube').css({ 'left': '0px' });
+            console.log(`positionSubMenu:${positionSubMenu}`);
+
+            $('.item-submenu .sube[submenu=' + positionSubMenu + '] .submenu').css({ 'left': '0px' });
+
+
+
+            // $('.item-submenu[submenu=' + positionSubMenu + '] .submenu .sube').css({ 'left': '0px' });
+
 
 
 
